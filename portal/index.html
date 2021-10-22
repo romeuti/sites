@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+		<title>Portal HTML5-CSS3</title>
+		<link href="assets/css/portal.css" rel="stylesheet">
+		<script type="text/javascript" src="assets/js/script.js"></script>
+	</head>
+	<body>
+		<!-- Primeiro Topo do site -->
+		<div class="topo">
+			<div class="topoint">
+				<div class="topoleft">
+					<ul>
+						<li><a href="./" class="ativo">Home</a></li>
+						<li><a href="quem-somos">Quem Somos</a></li>
+						<li><a href="anucie-aqui">Anuncie Aqui</a></li>
+						<li><a href="contato">Contato</a></li>
+					</ul>
+				</div>
+				<div class="toporight">
+					<!-- float: right - em vários itens um do lado do outro, tedem a inverter a ordem, pra isso, inverta no html 0 (input)
+					Neste caso a ordem é da direita pra esquerda -->
+						<input type="image" src="assets/images/lupa.png" border="0" width="26" height="26">
+						<input type="text" name="busca" class="topobusca" placeholder="Busca...">						
+						<a href="https://youtube.com/wiki/RSS"><img src="assets/images/youtube.png" border="0" width="26" height="26"></a>
+						<a href="https://twitter.com/?lang=pt-br"><img src="assets/images/twitter.png" border="0" width="26" height="26"></a>
+						<a href="https://www.facebook.com"><img src="assets/images/facebook.png" border="0" width="26" height="26"></a>
+						<a href="https://plus.google.com"><img src="assets/images/googleplus.png" border="0" width="26" height="26"></a>
+						<a href="https://pt.wikipedia.org/?gl=BR"><img src="assets/images/rss.png" border="0" width="26" height="26"></a>
+
+				</div>
+			</div>
+		<!-- Segundo Topo do site -->
+		</div>
+		<div class="topo2">
+			<div class="topo2int">
+				<div class="logo">
+					<img src="assets/images/logo.png" border="0" width="230">
+				</div>
+				<div class="banner">PUBLICIDADE 728X90px</div>
+			</div>
+		</div>
+		<!-- Menu principal -->
+		<div class="menu">
+			<div class="menuint">
+				<img src="assets/images/menu.png" border="0" width="40" height="40" class="menumobile" onclick="toggleMenu()">
+				<ul id="menu">
+					<li><a href="./">Home</a></li>
+					<li><a href="assets/images/manutencao_site.png">Economia</a></li>
+					<li><!-- submenu dropdown -->
+						<a href="./">Entretenimento</a>
+						<img src="assets/images/arrowdown1.png" border="0" width="11">
+						<div class="submenu">
+							<a href="assets/images/entretenimento_profissao.jpg"><div class="submenuitem">Profissão</div></a>
+							<a href="assets/images/entretenimento_estudo.jpg"><div class="submenuitem">Estudo</div></a>
+							<a href="assets/images/entretenimento_casa.jpg"><div class="submenuitem">Casa</div></a>
+							<a href="assets/images/entretenimento_industria.jpg"><div class="submenuitem">Indústria</div></a>
+							<a href="assets/images/entretenimento_youtube.jpg"><div class="submenuitem">Youtube</div></a>
+						</div>
+					</li>
+					<li>
+						<a href="./">Vídeos</a>
+						<img src="assets/images/arrowdown1.png" border="0" width="11">
+						<div class="submenu">
+							<a href="assets/midia/barrigao.mp4"><div class="submenuitem">Barrigão</div></a>
+							<a href="assets/midia/impotencia_xifre.mp4"><div class="submenuitem">Pr. Claudio Duarte</div></a>
+						</div>
+					</li>
+					<li><a href="./">Esportes</a></li>
+					<li>
+						<a href="assets/images/manutencao_site.png">Gif</a>
+						<img src="assets/images/arrowdown1.png" border="0" width="11">
+						<div class="submenu">
+							<a href="assets/images/crash.gif"><div class="submenuitem">Crash Bandicoot 1</div></a>
+							<a href="assets/images/hulk.gif"><div class="submenuitem">Hulk</div></a>
+							<a href="assets/images/goku.gif"><div class="submenuitem">Goku</div></a>
+							<a href="assets/images/brasil.gif"><div class="submenuitem">Brasil</div></a>
+						</div>
+					</li>
+					<li><a href="assets/images/manutencao_site.png">Áudio</a>
+						<img src="assets/images/arrowdown1.png" border="0" width="11">
+						<div class="submenu">
+							<a href="assets/midia/xaropinho.mp3"><div class="submenuitem">Xaropinho</div></a>
+							<a href="assets/midia/risada-ladrao.mp3"><div class="submenuitem">Risada Ladrão</div></a>
+							<a href="assets/midia/ai-pai.mp3"><div class="submenuitem">Ai Pai</div></a>
+							<a href="assets/midia/bicha-detectada.mp3"><div class="submenuitem">Detectado</div></a>
+						</div>
+					</li>
+					<li><a href="assets/images/romeuti.gif">Contato</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- ÚLTIMAS NOTÍCIAS -->
+		<div class="ultimasnoticias">
+			<div class="ultimasnoticiasint">
+				<div class="ultnoticiasarea">
+					<div class="ultnoticiastitulo">ÚLTIMAS NOTÍCIAS</div>
+					<div class="ultnoticiasnoticia">Baby baby do baby do biruleibe leibe do biruleibe do pikachu, do meu saco...</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="containerint">
+				<div class="leftside">
+					<div class="slideshow" id="slideshow">
+						<div class="slidebolinhas">
+							<div class="bolinha" onclick="mudarSlide(0)"></div>
+							<div class="bolinha" onclick="mudarSlide(1)"></div>
+							<div class="bolinha" onclick="mudarSlide(2)"></div>
+							<div class="bolinha" onclick="mudarSlide(3)"></div>
+						</div>
+						<div class="slideshowarea">
+							<a href="https://www.google.com.br">
+								<div class="slide" style="background-image:url('assets/images/camisa_palmeiras.jpg')">
+									<div class="slideinfo">
+										<div class="slideinfo_titulo">Tem mundial? O ex-presidente da Fifa Joseph Blatter afirmou!</div>
+										<div class="slideinfo_subtitulo">Copa Rio de 1951</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://www.uol.com.br">
+								<div class="slide" style="background-image:url('assets/images/citroen_c3.jpg')">
+									<div class="slideinfo">
+										<div class="slideinfo_titulo">Citroen C3</div>
+										<div class="slideinfo_subtitulo">As mina pira, os mano come</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://www.terra.com.br">
+								<div class="slide" style="background-image:url('assets/images/civic.jpg')">
+									<div class="slideinfo">
+										<div class="slideinfo_titulo">Civic</div>
+										<div class="slideinfo_subtitulo">Tiozão na batera, vai valeroso</div>
+									</div>
+								</div>
+							</a>
+							<a href="https://www.gazetadopovo.com.br/">
+								<div class="slide" style="background-image:url('assets/images/ford-ka.jpg')">
+									<div class="slideinfo">
+										<div class="slideinfo_titulo">Ford Ka</div>
+										<div class="slideinfo_subtitulo">Cê tais é doido</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="widget">
+						<!-- As imagens do "SOCIAL" foi colocado na ordem, devido não ter o float-right, como foi aplicado no "topo -->
+						<div class="widget_titulo">NOTÍCIAS</div>
+						<div class="widget_conteudo">
+							<div class="noticiaarea1">
+								<div class="noticiaitem noticiabig">
+									<div class="noticiaimg">
+										<img src="assets/images/parana_botafogo.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Coisa de louco, sem vencedor!</div>
+									<div class="noticiainfo">Simplesmente batendo uma pelada, nas regras 5/5...</div>
+								</div>
+							</div>
+							<div class="noticiaarea2">
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/rodrigo.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Rodrigo o Mitotô</div>
+									<div class="noticiainfo">Baby baby do biruleibe do pikachu do meu saco!</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/belli.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Belli</div>
+									<div class="noticiainfo">Tú tais louco e não chegastes!</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/valeroso.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Valeroso na Batera</div>
+									<div class="noticiainfo">Esse gosta dos pauzinhos na mão!</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/romeu.png" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Esse cara não sou eu</div>
+									<div class="noticiainfo">Romel dos Santos!</div>
+								</div>
+							</div>
+							<!-- Devido o float: left, usa-se para ajeitar (<div style="clear:both"></div>) corrigindo as laterais...-->
+							<div style="clear:both"></div>
+						</div>
+					</div>
+					<div class="widget">
+						<!-- As imagens do "SOCIAL" foi colocado na ordem, devido não ter o float-right, como foi aplicado no "topo -->
+						<div class="widget_titulo">EXPORTES</div>
+						<div class="widget_conteudo">
+							<div class="noticiaarea1">
+								<div class="noticiaitem noticiabig">
+									<div class="noticiaimg">
+										<img src="assets/images/parana_botafogo.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Coisa de louco, sem vencedor!</div>
+									<div class="noticiainfo">Simplesmente batendo uma pelada, nas regras 5/5...</div>
+								</div>
+							</div>
+							<div class="noticiaarea2">
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/rodrigo.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Rodrigo o Mitotô</div>
+									<div class="noticiainfo">Baby baby do biruleibe do pikachu do meu saco!</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/belli.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Belli</div>
+									<div class="noticiainfo">Tú tais louco e não chegastes!</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/valeroso.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Valeroso na Batera</div>
+									<div class="noticiainfo">Esse gosta dos pauzinhos na mão!</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/romeu.png" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Esse cara não sou eu</div>
+									<div class="noticiainfo">Romel dos Santos!</div>
+								</div>
+							</div>
+							<!-- Devido o float: left, usa-se para ajeitar (<div style="clear:both"></div>) corrigindo as laterais...-->
+							<div style="clear:both"></div>
+						</div>
+					</div>
+				</div>
+				<div class="rightside">
+					<div class="widget">
+						<!-- As imagens do "SOCIAL" foi colocado na ordem, devido não ter o float-right, como foi aplicado no "topo -->
+						<div class="widget_titulo">SOCIAL</div>
+						<div class="widget_conteudo">
+							<a href="https://pt.wikipedia.org/wiki/RSS"><img src="assets/images/rss.png" border="0" width="26" height="26"></a>
+							<a href="https://plus.google.com"><img src="assets/images/googleplus.png" border="0" width="26" height="26"></a>
+							<a href="https://www.facebook.com/romeusn"><img src="assets/images/facebook.png" border="0" width="26" height="26"></a>
+							<a href="https://twitter.com/?lang=pt-br"><img src="assets/images/twitter.png" border="0" width="26" height="26"></a>
+							<a href="https://www.youtube.com/?gl=BR"><img src="assets/images/youtube.png" border="0" width="26" height="26"></a>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget_titulo">OUTRAS NOTÍCIAS</div>
+						<div class="widget_conteudo">
+							<div class="noticia_item">
+								<a href=""> Ao longo da história, a humanidade já se deparou com inúmeras causas de mortes, sejam por meio de espadas, balas, bombas, etc.</a>
+							</div>
+							<div class="noticia_item">
+								<a href=""> Ao longo da história, a humanidade já se deparou com inúmeras causas de mortes, sejam por meio de espadas, balas, bombas, etc.</a>
+							</div>
+							<div class="noticia_item">
+								<a href=""> Ao longo da história, a humanidade já se deparou com inúmeras causas de mortes, sejam por meio de espadas, balas, bombas, etc.</a>
+							</div>
+							<div class="noticia_item">
+								<a href=""> Ao longo da história, a humanidade já se deparou com inúmeras causas de mortes, sejam por meio de espadas, balas, bombas, etc.</a>
+							</div>
+							<div class="noticia_item">
+								<a href=""> Ao longo da história, a humanidade já se deparou com inúmeras causas de mortes, sejam por meio de espadas, balas, bombas, etc.</a>
+							</div>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget_titulo">TEMOS MUNDIAL</div>
+						<div class="widget_conteudo">
+							<a href="http://www.palmeiras.com.br/home/"><img src="assets/images/palmeiras.gif" border="0" width="275"></a>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget_titulo">ENCONTRE-NOS NO FACEBOOK</div>
+						<div class="widget_conteudo">
+							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=340&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1392111860879228" width="275" height="275" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+<!--
+
+-->
